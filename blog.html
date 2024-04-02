@@ -1,115 +1,86 @@
 <!DOCTYPE html>
-
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Nicole Pakiding">
         <meta name="description" content="This is my blog.">
-        <title>Blog | Nicole's Personal Homepage</title>
+        <title>Blog | nicorner</title>
+
         <link rel="icon" href="blogicon.png" type="image/x-icon">
-        <style>
-            .text-justify {
-                text-align: justify;
-            }
-        </style>        
+        <link rel="stylesheet" href="styling.css">
+
     </head>
-
     <body>
-        <header>
-            <h1>Welcome to Nicole's Personal Homepage!</h1>
-            <nav>
-                </div>
-                    <a href="index.html" target="home">
-                        <button class="button">Home</button>
-                    </a>
-                    <a href="galery.html" target="gallery">
-                        <button class="button">Gallery</button>
-                    </a>
-                    <a href="blog.html" target="blog">
-                        <button class="button">Blog</button>
-                    </a>
-                    <a href="contact.html" target="contact">
-                        <button class="button">Contact</button>
-                    </a>
-                </div>
-            </nav>
-        </header>
-        <hr>
+        
+        <header>        
+            <a href="" class="logo">nicorner</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
 
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="galery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </header>
+        
         <main>
-            <article id="yaki">
-                <h2>Yaki: Si Monyet Hitam Sulawesi</h2>
-                <div style="overflow: auto;">
-                    <img src="yaki.jpg" alt="Foto Yaki" style="width: 250px; float: left; margin-right: 20px;">
-                    <p class="text-justify">
-                        Yaki, juga dikenal sebagai Monyet Wolai atau Monyet Hitam Sulawesi (Macaca nigra), merupakan spesies endemik Indonesia yang hanya dapat ditemui di Pulau Sulawesi bagian utara dan beberapa pulau di sekitarnya. Mereka memiliki ciri khas berupa tubuh hitam dengan bulu berbentuk jambul di atas kepala dan pantat berwarna merah muda. Dengan tinggi sekitar 44-60 centimeter dan berat antara 7-15 kilogram, yaki adalah jenis monyet makaka terbesar di Pulau Sulawesi.
+            <section class="home" id="blog">
+                <div class="home-text">
+                    <h1>My Blog</h1>
+                    <a href="#yaki" class="arrow-down">&#x2B9F;</a>
+                </div>
+            </section>
+
+            <section class="bloglight" id="yaki">
+                <div class="bloglight-text">
+                    <h3>Yaki: Si Monyet Hitam Sulawesi</h3>
+                    <p>Yaki, juga dikenal sebagai Monyet Wolai atau Monyet Hitam Sulawesi (Macaca nigra), merupakan spesies endemik Indonesia yang hanya dapat ditemui di Pulau Sulawesi bagian utara dan beberapa pulau di sekitarnya. Mereka memiliki ciri khas berupa tubuh hitam dengan bulu berbentuk jambul di atas kepala dan pantat berwarna merah muda. Dengan tinggi sekitar 44-60 centimeter dan berat antara 7-15 kilogram, yaki adalah jenis monyet makaka terbesar di Pulau Sulawesi.
                     </p>
-                    <p class="text-justify">
+                    <p>
                         Yaki memakan berbagai jenis tumbuhan, serangga, moluska, dan invertebrata kecil. Mereka juga terkenal dengan kecenderungannya mencari moluska di tepi laut. Habitat alami yaki meliputi hutan hujan, baik primer maupun sekunder, serta daerah pesisir hingga ketinggian 2000 meter di atas permukaan laut. Namun, hilangnya habitat akibat penebangan hutan dan perburuan membuat populasi yaki terancam punah, dengan penurunan lebih dari 80% dalam tiga generasi terakhir.
                     </p>
-                    <p class="text-justify">
+                    <p>
                         Yaki hidup dalam kelompok besar yang terdiri dari 20-70 ekor, dengan dominasi betina dalam hierarki kelompok. Mereka tergolong hewan semi-arboreal dan teresterial, aktif pada siang hari dengan cara bergerak yang bervariasi. Untuk melindungi spesies ini, yaki dilindungi berdasarkan Undang-Undang Republik Indonesia Nomor 5 Tahun 1990 dan Peraturan Pemerintah Nomor 7 Tahun 1999.
                     </p>
-                    <p>Sumber:
-                        <ul>
-                            <li><a href="https://id.wikipedia.org/wiki/Yaki">Yaki - Wikipedia bahasa Indonesia, ensiklopedia bebas</a></li>
-                        </ul>
-                    </p>
                 </div>
-            </article>
-            <hr>
+            </section>
 
-            <article id="stunting">
-                <h2>Stunting: Mendukung Pertumbuhan Anak dengan Gizi dan Lingkungan Sehat</h2>
-                <div style="overflow: auto;">
-                    <img src="stunting.jpg" alt="Foto Anak-anak" style="width: 250px; float: left; margin-right: 20px;">
-                    <p class="text-justify">
-                        Stunting, sebuah gangguan pertumbuhan dan perkembangan yang menghantui anak-anak di seluruh dunia, khususnya di negara-negara berkembang seperti Indonesia. Menurut berbagai sumber, stunting disebabkan oleh berbagai faktor kompleks, mulai dari malnutrisi kronis pada ibu hamil hingga kekurangan nutrisi pada anak selama masa pertumbuhannya. Gejala yang paling mencolok adalah tinggi badan anak yang lebih pendek dari standar usianya, tetapi juga terdapat indikasi lain seperti keterlambatan perkembangan, rentan terhadap penyakit, dan masalah kesehatan lainnya.
+            <section class="blogdark" id="stunting">
+                <div class="blogdark-text">
+                    <h3>Stunting: Mendukung Pertumbuhan Anak dengan Gizi dan Lingkungan Sehat</h3>
+                    <p>Stunting, sebuah gangguan pertumbuhan dan perkembangan yang menghantui anak-anak di seluruh dunia, khususnya di negara-negara berkembang seperti Indonesia. Menurut berbagai sumber, stunting disebabkan oleh berbagai faktor kompleks, mulai dari malnutrisi kronis pada ibu hamil hingga kekurangan nutrisi pada anak selama masa pertumbuhannya. Gejala yang paling mencolok adalah tinggi badan anak yang lebih pendek dari standar usianya, tetapi juga terdapat indikasi lain seperti keterlambatan perkembangan, rentan terhadap penyakit, dan masalah kesehatan lainnya.
                     </p>
-                    <p class="text-justify">
+                    <p>
                         Meskipun stunting masih menjadi masalah serius yang dihadapi banyak negara, langkah-langkah pencegahan dan penanganan yang tepat dapat mengurangi dampaknya secara signifikan. Pemenuhan gizi yang cukup, baik selama kehamilan maupun pada masa anak-anak, menjadi kunci utama dalam mencegah stunting. Selain itu, perhatian terhadap sanitasi dan kebersihan lingkungan juga memainkan peran penting dalam memastikan anak-anak tumbuh dengan sehat dan tanpa hambatan pertumbuhan.
                     </p>
-                    <p class="text-justify">
+                    <p>
                         Upaya pencegahan stunting bukan hanya tanggung jawab individu atau keluarga, tetapi juga merupakan tanggung jawab bersama masyarakat dan pemerintah. Edukasi tentang pentingnya gizi seimbang, akses terhadap layanan kesehatan yang berkualitas, serta pembangunan infrastruktur yang mendukung sanitasi yang baik adalah langkah-langkah yang perlu ditingkatkan secara kolektif. Dengan kesadaran dan aksi bersama, kita dapat memberikan masa depan yang lebih cerah bagi generasi masa depan, bebas dari beban stunting dan masalah kesehatan terkait gizi.
                     </p>
-                    <p>Sumber:
-                        <ul>
-                            <li><a href="https://www.siloamhospitals.com/informasi-siloam/artikel/apa-itu-stunting">Mengenal Stunting - Pengertian, Penyebab, dan Pencegahannya</a></li>
-                            <li><a href="https://www.alodokter.com/stunting">Stunting - Gejala, Penyebab, dan Pengobatan - Alodokter</a></li>
-                            <li><a href="https://yankes.kemkes.go.id/view_artikel/1388/mengenal-apa-itu-stunting">Mengenal Apa Itu Stunting</a></li>
-                        </ul>
-                    </p>
                 </div>
-            </article>
-            <hr>
+            </section>
 
-            <article id="dbd">
-                <h2>Demam Berdarah Dengue: Pencegahan, Gejala, dan Penanganan</h2>
-                <div style="overflow: auto;">
-                    <img src="nyamuk.jpg" alt="Foto Nyamuk" style="width: 250px; float: left; margin-right: 20px;">
-                    <p class="text-justify">
-                        Demam Berdarah Dengue (DBD) adalah penyakit serius yang disebabkan oleh virus Dengue yang ditularkan melalui gigitan nyamuk Aedes aegypti atau Aedes albopictus. Di Indonesia, DBD merupakan masalah kesehatan yang signifikan, dengan jumlah kasus yang cenderung meningkat setiap tahunnya. Kementerian Kesehatan mencatat bahwa pada tahun 2023 saja, terdapat lebih dari 114.000 kasus DBD, dengan Jawa Barat menjadi provinsi dengan kasus tertinggi. Penyakit ini dapat menyerang siapa saja, baik anak-anak maupun orang dewasa, dan dapat berakibat fatal jika tidak ditangani dengan cepat dan tepat.
+            <section class="bloglight" id="dbd">
+                <div class="bloglight-text">
+                    <h3>Demam Berdarah Dengue: Pencegahan, Gejala, dan Penanganan</h3>
+                    <p>Demam Berdarah Dengue (DBD) adalah penyakit serius yang disebabkan oleh virus Dengue yang ditularkan melalui gigitan nyamuk Aedes aegypti atau Aedes albopictus. Di Indonesia, DBD merupakan masalah kesehatan yang signifikan, dengan jumlah kasus yang cenderung meningkat setiap tahunnya. Kementerian Kesehatan mencatat bahwa pada tahun 2023 saja, terdapat lebih dari 114.000 kasus DBD, dengan Jawa Barat menjadi provinsi dengan kasus tertinggi. Penyakit ini dapat menyerang siapa saja, baik anak-anak maupun orang dewasa, dan dapat berakibat fatal jika tidak ditangani dengan cepat dan tepat.
                     </p>
-                    <p class="text-justify">
+                    <p>
                         Gejala DBD bervariasi, mulai dari demam tinggi, nyeri otot dan sendi, hingga manifestasi perdarahan pada kulit dan mukosa. Tahap kritis DBD terjadi ketika suhu tubuh mulai turun dan pembuluh darah mengalami kebocoran, menyebabkan gejala yang lebih parah seperti sakit perut, muntah darah, dan mudah terjadi perdarahan. Di fase ini, pemantauan cairan tubuh sangat penting karena risiko dehidrasi dan komplikasi serius lainnya.
                     </p>
-                    <p class="text-justify">
+                    <p>
                         Pencegahan DBD melibatkan upaya pemberantasan sarang nyamuk, vaksinasi, dan kesadaran akan gejala-gejala penyakit ini. Program PSN (Pemberantasan Sarang Nyamuk) dengan 3M Plus menjadi langkah penting dalam menjaga lingkungan bebas dari nyamuk pembawa virus Dengue. Selain itu, vaksinasi juga merupakan strategi pencegahan efektif, terutama bagi individu yang tinggal di daerah dengan risiko tinggi terkena DBD. Kesadaran akan gejala-gejala awal DBD juga penting untuk memungkinkan penanganan yang tepat waktu, mengurangi risiko komplikasi, dan menghindari dampak yang lebih parah bagi kesehatan.
                     </p>
-                    <p>Sumber:
-                        <ul>
-                            <li><a href="https://www.mitrakeluarga.com/artikel/gejala-demam-berdarah">Mengenal Gejala Demam Berdarah (DBD) & Pengobatan yang Tepat - Mitra Keluarga</a></li>
-                            <li><a href="https://www.siloamhospitals.com/informasi-siloam/artikel/tanda-dan-gejala-dbd-berat-yang-harus-dikenali">Mengenal Tanda dan Gejala DBD yang Harus Diwaspadai</a></li>
-                            <li><a href="https://www.alodokter.com/demam-berdarah">Demam Berdarah - Gejala, Penyebab, dan Pengobatan - Alodokter</a></li>
-                        </ul>
-                    </p>
                 </div>
-            </article>
+            </section>
+
         </main>
-        <hr>
         <footer>
-            <p>Copyright &copy; 220211060106</p>
-        </footer>
+        </div>
+            <p class="foot">Copyright &copy; nicorner. All Rights Reserved.</p>
+        </div>
+    </footer>
     </body>
 
 </html>

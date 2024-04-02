@@ -1,59 +1,47 @@
 <!DOCTYPE html>
-
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Nicole Pakiding">
         <meta name="description" content="This is my gallery.">
-        <title>Gallery | Nicole's Personal Homepage</title>
+        <title>Gallery | nicorner</title>
+
         <link rel="icon" href="galeryicon.png" type="image/x-icon">
-        <style>
-            .gallery {
-                display: grid;       
-                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-                gap: 10px;
-            }
-            .gallery img {
-                width: 200px;
-                height: 200px;
-                display: block;
-            }
-        </style>
+        <link rel="stylesheet" href="styling.css">
     </head>
     
     <body>
         <header>
-            <h1>Welcome to Nicole's Personal Homepage!</h1>
-            <nav>
-                </div>
-                    <a href="index.html" target="home">
-                        <button class="button">Home</button>
-                    </a>
-                    <a href="galery.html" target="gallery">
-                        <button class="button">Gallery</button>
-                    </a>
-                    <a href="blog.html" target="blog">
-                        <button class="button">Blog</button>
-                    </a>
-                    <a href="contact.html" target="contact">
-                        <button class="button">Contact</button>
-                    </a>
-                </div>
-            </nav>
+            <a href="" class="logo">nicorner</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="galery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </header>
-        <hr>
+
         <main>
-            <h2>Gallery</h2>
-            <div class="gallery">
-                <img src="yaki.jpg" alt="image">
-                <img src="stunting.jpg" alt="image">
-                <img src="nyamuk.jpg" alt="image">
-            </div>
+            <section class="gallery" id="gallery">
+                <div class="gallery-text">
+                    <h3>My Gallery</h3>
+                </div>
+                <div class="gallery-img">
+                    <img src="gallery/pict/yaki.jpg" alt="image">
+                    <img src="gallery/pict/stunting.jpg" alt="image">
+                    <img src="gallery/pict/nyamuk.jpg" alt="image">
+                </div>
+            </section>
+            
         </main>
-        <hr>
         <footer>
-            <p>Copyright &copy; 220211060106</p>
-        </footer>
+        </div>
+            <p class="foot">Copyright &copy; nicorner. All Rights Reserved.</p>
+        </div>
+    </footer>
     </body>
     
 </html>
