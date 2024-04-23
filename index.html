@@ -1,53 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- ========== META ========== -->
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Nicole Pakiding">
-        <meta name="description" content="This is my project assignment 1 for 'HTML' from the Web Programming course.">
-        <title>Home | nicorner</title>
-
-        <link rel="icon" href="homeicon.png" type="image/x-icon">
-        <link rel="stylesheet" href="styling.css">
-
-    </head>
-    <body>
         
-        <header>        
-            <a href="" class="logo">nicorner</a>
-            <div class="bx bx-menu" id="menu-icon"></div>
+        <!-- ========== TITLE ========== -->
+        <title>Nicorner</title>
+        <link rel="icon" href="asset/picture/profile/avatarA_bgred.png" type="image/x-icon">
+        
+        <!-- ========== LINK TO CSS==========  -->
+        <link rel="stylesheet" href="asset/css/styles.css">
+        
+        <!-- ========== LINK TO BOX ICONS ========== -->
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    </head>
 
+    <body>
+        <!-- ==================== HEADER / NAVBAR ==================== -->
+        <header>
+            <a href="#" class="logo"><img src="asset/picture/profile/avatarA_bgred.png" alt="icon avatar A"></a>
+            <div class="bx bx-menu" id="burger-menu"></div>
+            
+            <!-- ========== NAVBAR MENU ========== -->
             <ul class="navbar">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="galery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aboutme">About</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </header>
-        
-        <main>
-            <section class="home" id="home">
-                <div class="home-text">
-                    <h4>Welcome to</h4>
-                    <h1>Nicole's Corner</h1>
-                    <a href="#about" class="arrow-down">&#x2B9F;</a>
+
+        <!-- ==================== HOME SECTION ==================== -->
+        <section class="home" id="home">
+            <div class="home-text">
+                <h5>Welcome to</h5>
+                <h1>Nicorner</h1>
+                <h3>A Special Space All <br>About Me</h3>
+            </div>
+            <div class="home-img">
+                <img src="asset/picture/profile/avatarB_bgred.png" alt="icon avatar B">
+            </div>
+        </section>
+
+        <!-- ==================== ABOUT ME SECTION ==================== -->
+        <section class="aboutme" id="aboutme">
+            <div class="heading">
+                <span>A Little</span>
+                <h2>About Me</h2>
+            </div>
+            <div class="abm-container">
+                <div class="aboutme-img">
+                    <img src="asset/picture/profile/nicole_0wht.png" alt="Nicole Pakiding Photo">
                 </div>
-            </section>
-
-            <section class="about" id="about">
-                <div class="about-text">
-                    <h2>About Me</h2>
-                    <p>Hi! I'm Nicole Pakiding, studying Informatics at Sam Ratulangi University. I like reading, watching movies, and playing games for fun and inspiration. I also enjoy going for walks to explore new things.
+                <div class="aboutme-text">
+                    <h4>Hi! I'm Nicole Pakiding</h4>
+                    <p>
+                        I'm a student from Manado studying Computer Engineering at Sam Ratulangi University. I'm in my fourth semester and enjoying my time in college. In my free time, I like to go out and explore new places to see more of the world.
                     </p>
-                </div> 
-            </section>
+                    <p>
+                        I also enjoy reading stories to relax and get inspiration. I have a sweet tooth and love sweet treats. I'm enthusiastic about learning and open to new opportunities in my field.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-        </main>
-        <footer>
+        <!-- ==================== BLOGS SECTION ==================== -->
+        <section class="blog" id="blog">
+            <div class="heading">
+                <span>Checkout My</span>
+                <h2>My Blogs</h2>
             </div>
-                <p class="foot">Copyright &copy; nicorner. All Rights Reserved.</p>
+            <div class="box-container">
+                
+                <!-- ========== BLOG BOX 1 ========== -->
+                <div class="box">
+                    <div class="image">
+                        <img src="asset/picture/blog/yaki.jpg" alt="Foto Yaki">
+                    </div>
+                    <div class="content">
+                        <a href="#blog"><h2>Yaki</h2></a>
+                        <span>24 April 2024</span>
+                        <p>
+                            Yaki, juga dikenal sebagai Monyet Wolai atau Monyet Hitam Sulawesi (Macaca nigra), merupakan spesies endemik Indonesia yang hanya dapat ditemui di Pulau Sulawesi bagian utara dan beberapa pulau di sekitarnya.
+                        </p>
+                        <a href="#blog" class="btn">Read More</a>
+                    </div>
+                </div>
+
+                <!-- ========== BLOG BOX 2 ========== -->
+                <div class="box">
+                    <div class="image">
+                        <img src="asset/picture/blog/stunting.jpg" alt="Foto Stunting">
+                    </div>
+                    <div class="content">
+                        <a href="#blog"><h2>Stunting</h2></a>
+                        <span>24 April 2024</span>
+                        <p>
+                            Stunting, sebuah gangguan pertumbuhan dan perkembangan yang menghantui anak-anak di seluruh dunia, khususnya di negara-negara berkembang seperti Indonesia. Menurut berbagai sumber, stunting disebabkan oleh...
+                        </p>
+                        <a href="#blog" class="btn">Read More</a>
+                    </div>
+                </div>
+
+                <!-- ========== BLOG BOX 3 ========== -->
+                <div class="box">
+                    <div class="image">
+                        <img src="asset/picture/blog/nyamuk.jpg" alt="Foto Nyamuk DBD">
+                    </div>
+                    <div class="content">
+                        <a href="#blog"><h2>DBD</h2></a>
+                        <span>24 April 2024</span>
+                        <p>
+                            Demam Berdarah Dengue (DBD) adalah penyakit serius yang disebabkan oleh virus Dengue yang ditularkan melalui gigitan nyamuk Aedes aegypti atau Aedes albopictus. Di Indonesia, DBD merupakan masalah kesehatan yang signifikan...
+                        </p>
+                        <a href="#blog" class="btn">Read More</a>
+                    </div>
+                </div>
             </div>
-        </footer>
+        </section>
+
+        <!-- ==================== GALLERY SECTION ==================== -->
+        <section class="gallery" id="gallery">
+            <div class="heading">
+                <span>Look at</span>
+                <h2>My Gallery</h2>
+            </div>
+            <div class="gallery-card__container">
+                <!-- ========== PHOTO 1 ========== -->
+                <div class="gallery-photo__card">
+                    <img src="asset/picture/gallery/sleeping_cat.jpg" alt="Foto Sleeping Cat" class="gallery-card__img">
+                        <div class="gallery-card__desc">
+                            <h2 class="gallery-card__title">Sleeping Cat</h2>
+                        </div>
+                    </div>
+
+                <!-- ========== PHOTO 2 ========== -->
+                <div class="gallery-photo__card">
+                    <img src="asset/picture/gallery/air_balloon.jpg" alt="Foto Air Balloon" class="gallery-card__img">
+                    <div class="gallery-card__desc">
+                        <h2 class="gallery-card__title">Air Balloon</h2>
+                    </div>
+                </div>
+
+                <!-- ========== PHOTO 3 ========== -->
+                <div class="gallery-photo__card">
+                    <img src="asset/picture/gallery/dk_heart_pose.jpg" alt="Foto DK Heart Pose" class="gallery-card__img">
+                    <div class="gallery-card__desc">
+                        <h2 class="gallery-card__title">DK Heart Pose</h2>
+                    </div>
+                </div>
+
+                <!-- ========== PHOTO 4 ========== -->
+                <div class="gallery-photo__card">
+                    <img src="asset/picture/gallery/one_dawn.jpg" alt="Foto One Dawn" class="gallery-card__img">
+                    <div class="gallery-card__desc">
+                        <h2 class="gallery-card__title">One Dawn</h2>
+                    </div>
+                </div>
+
+                <!-- ========== PHOTO 5 ========== -->
+                <div class="gallery-photo__card">
+                    <img src="asset/picture/gallery/clouds.jpg" alt="Foto Clouds" class="gallery-card__img">
+                    <div class="gallery-card__desc">
+                        <h2 class="gallery-card__title">Clouds</h2>
+                    </div>
+                </div>
+
+                <!-- ========== PHOTO 6 ========== -->
+                <div class="gallery-photo__card">
+                    <img src="asset/picture/gallery/bench.jpg" alt="Foto Bench" class="gallery-card__img">
+                    <div class="gallery-card__desc">
+                        <h2 class="gallery-card__title">A Bench</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== CONTACT SECTION ==================== -->
+        <section class="contact" id="contact">
+            <div class="social">
+                <h5>Contact Me on:</h5>
+                <a href="mailto:nicolepakiding026@student.unsrat.ac.id" target="gmail"><i class="bx bxl-gmail"></i></a>
+                <a href="https://github.com/nicolergn" target="github"><i class="bx bxl-github"></i></a>
+            </div>
+            <p>&#169; Nicorner All Right Reserved.</p>
+        </section>
+
+        <!-- ==================== LINK TO JAVASCRIPT ==================== -->
+        <script src="tes.js"></script>
     </body>
-    
 </html>

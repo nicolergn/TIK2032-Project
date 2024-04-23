@@ -1,0 +1,581 @@
+/* ========== NICOLE R ========== */
+/* ==================== TIK2032-PROJECT ==================== */
+
+/* ==================== GOOGLE FONTS ==================== */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+/* ==================== GENERAL ==================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+}
+
+:root{
+    /* ========== COLORS ========== */
+    --main-color: #810800;
+    --second-color: #c6803b;
+    --lightest-color: #fcfcfc;
+    --grey-color: #dedcd7;
+    --darkest-color: #1b171d;
+    --border: 0.1rem solid rgba(113, 111, 109, 0.329);
+
+    /* ========== TEXT ========== */
+    --h1-font-size: 5rem;
+    --h2-font-size: 2rem;
+    --h3-font-size: 1.8rem;
+    --h4-font-size: 1.2rem;
+    --h5-font-size: 1rem;
+    --p-font-size: 1rem;
+}
+
+*::selection{
+    color: var(--lightest-color);
+    background: var(--main-color);
+}
+
+img{
+    max-width: 100%;
+}
+
+section {
+    padding: 60px 10%;
+}
+
+/* ========== HEADING ========== */
+.heading {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.heading span {
+    font-size: var(--h5-font-size);
+    font-weight: 600;
+    color: var(--darkest-color);
+}
+
+.heading h2 {
+    font-size: var(--h2-font-size);
+    color: var(--second-color);
+}
+
+/* ==================== HEADER START ==================== */
+
+header {
+    padding: 15px 10%;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--lightest-color);
+    box-shadow: 0 4px 41px rgb(14 55 54 / 14%);
+    transition: 0.2s;
+}
+
+.logo img {
+    width: 40px;
+}
+
+/* ========== MEDIUM - LARGE NAVBAR ========== */
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    padding: 11px 20px;
+    font-size: var(--h5-font-size);
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--darkest-color);
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+}
+
+/* ========== SMALL NAVBAR ========== */
+
+#burger-menu {
+    display: none;
+    cursor: pointer;
+    z-index: 1001;
+    font-size: var(--h3-font-size);
+    color: var(--darkest-color);
+}
+
+#burger-menu:hover {
+    color: var(--main-color);
+}
+
+/* ==================== HEADER STOP ==================== */
+
+/* ==================== HOME SECTION START ==================== */
+
+.home {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    background: var(--grey-color);
+}
+
+/* ========== HOME TEXT ========== */
+.home-text {
+    flex: 1 1 17rem;
+}
+
+.home-text h1 {
+    font-size: var(--h1-font-size);
+    font-weight: bolder;
+    color: var(--main-color);
+}
+
+.home-text h3 {
+    margin: 0.5rem 0 1.4rem;
+    font-size: var(--h3-font-size);
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--darkest-color);
+}
+
+.home-text h5 {
+    font-size: var(--h5-font-size);
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--darkest-color);
+}
+
+/* ========== HOME IMG & ANIMATION ========== */
+.home-img {
+    flex: 1 1 17rem;
+    padding-top: inherit;
+}
+
+.home-img img {
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(-11px, 0);
+    }
+    50% {
+        transform: translate(0, -11px);
+    }
+    100% {
+        transform: translate(-11px, 0);
+    }
+}
+
+/* ==================== HOME SECTION STOP ==================== */
+
+/* ==================== ABOUTME SECTION START ==================== */
+
+.aboutme {
+    background-color: var(--lightest-color);
+}
+
+.abm-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap:  1.5rem;
+    margin-top: 2rem;
+}
+
+.aboutme-img {
+    flex: 1 1 21rem;
+    max-width: 200px;
+}
+
+.aboutme-text {
+    flex: 1 1 21rem;
+}
+
+.aboutme-text h4 {
+    font-size: var(--h4-font-size);
+    color: var(--second-color);
+    margin-bottom: 0.5rem;
+}
+
+.aboutme-text p {
+    margin: 0.5rem 0 1 rem;
+    font-size: var(--p-font-size);
+    text-align: justify;
+    margin-bottom: 0.5rem;
+}
+
+/* ==================== ABOUTME SECTION STOP ==================== */
+
+/* ==================== BLOGS SECTION START ==================== */
+
+/* ========== BLOG CONTAINER ========== */
+.blog {
+    background: var(--grey-color);
+    height: auto;
+}
+
+.blog .heading h2 {
+    color: var(--main-color);
+    margin-bottom: 3rem;
+}
+
+.blog .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1.5rem;
+}
+
+.blog .box-container .box {
+    border: var(--border);
+    border-radius: 1rem;
+    background: var(--lightest-color);
+}
+
+/* ========== BLOGS IMAGE ========== */
+.blog .box-container .box .image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.blog .box-container .box .image img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.blog .box-container .box .image img {
+    transform: scale(1.2);
+}
+
+/* ========== BLOG CONTENT ========== */
+
+.blog .box-container .box .content {
+    padding: 2rem;
+}
+
+.blog .box-container .box .content h2 {
+    font-size: var(--h3-font-size);
+    line-height: 0.1;
+    color: var(--darkest-color);
+}
+
+.blog .box-container .box .content h2:hover {
+    color: var(--main-color);
+}
+
+.blog .box-container .box .content span {
+    color: var(--main-color);
+    display: block;
+    padding-top: 1.5rem;
+    font-size: 0.8rem;
+}
+
+.blog .box-container .box .content p {
+    font-size: var(--p-font-size);
+    line-height: 1.5;
+    color: var(--darkest-color);
+    padding: 1rem 0;
+}
+
+/* ========== BLOGS BUTTONS ========== */
+.blog .box-container .box .content .btn {
+    display: inline-block;
+    padding: 0.7rem 2rem;
+    border-radius: 1.5rem;
+    margin-top: auto;
+    cursor: pointer;
+    font-size: var(--h5-font-size);
+    color: var(--lightest-color);
+    background: var(--main-color);
+}
+
+.blog .box-container .box .content .btn:hover {
+    letter-spacing: 0.2rem;
+}
+
+/* ==================== BLOGS SECTION STOP ==================== */
+
+/* ==================== GALLERY SECTION START ==================== */
+
+.gallery {
+    background-color: var(--lightest-color);
+    color: var(--darkest-color);
+    height: auto;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+.gallery .heading {
+    margin-bottom: 3rem;
+}
+
+/* ========== PHOTO CARD ========== */
+
+.gallery-card__container {
+    display: grid;
+    row-gap: 3.5rem;
+}
+
+.gallery-photo__card {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-card__img {
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+    border-radius: 1rem;
+}
+
+/* ========== POP UP PHOTO DESC ========== */
+
+.gallery-card__desc {
+    width: 90%;
+    height: 25%;
+    border-radius: 1rem;
+    align-content: center;
+    opacity: 0;
+    transition: opacity 1s 1s;
+    background-color: var(--lightest-color);
+    box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+    /* --- posisi pop up desc */
+    position: absolute;
+    bottom: -9rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+}
+
+.gallery-card__title {
+    font-size: var(--h4-font-size);
+    text-align: center;
+    letter-spacing: 1.5px;
+    color: var(--darkest-color);
+}
+
+/* ========== PHOTO CARD DESC HOVER ========== */
+
+.gallery-photo__card:hover .gallery-card__desc {
+    animation: show-data 1s forwards;
+    opacity: 1;
+    transition: opacity .3s;
+}
+
+.gallery-photo__card:hover {
+    animation: remove-overflow 2s forwards;
+}
+
+.gallery-photo__card:not(:hover) {
+    animation: show-overflow 2s forwards;
+}
+
+.gallery-photo__card:not(:hover) .gallery-card__desc {
+    animation: remove-data 1s forwards;
+}
+
+/* ========== PHOTO CARD DESC ANIMATION ========== */
+
+@keyframes show-data {
+    50% {
+        transform: translateY(-10rem);
+    }
+    100% {
+        transform: translateY(-7rem);
+    }
+}
+
+@keyframes remove-overflow {
+    to {
+        overflow: initial;
+    }
+}
+
+@keyframes remove-data {
+    0% {
+        transform: translateY(-7rem);
+    }
+    50% {
+        transform: translateY(-10rem);
+    }
+    100% {
+        transform: translateY(.5rem);
+    }
+}
+
+@keyframes show-overflow {
+    0% {
+        overflow: initial;
+        pointer-events: none;
+    }
+    50% {
+        overflow: hidden;
+    }
+}
+
+/* ==================== GALLERY SECTION STOP ==================== */
+
+/* ==================== CONTACT SECTION START ==================== */
+
+.contact {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--grey-color);
+}
+
+.contact h5 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: var(--h5-font-size);
+    color: var(--darkest-color);
+}
+
+.contact p {
+    text-align: center;
+    font-size: var(--p-font-size);
+    color: var(--darkest-color);
+}
+
+.social a{
+    font-size: var(--h2-font-size);
+    margin: 1rem;
+}
+
+.social a .bx {
+    padding: 0.5rem;
+    border-radius: 50%;
+    margin-top: 1.5rem;
+    margin-bottom: 1.8rem;
+    color: var(--lightest-color);
+    background: var(--darkest-color);
+}
+
+.social a .bx:hover {
+    background: var(--main-color);
+}
+
+/* ==================== CONTACT SECTION STOP ==================== */
+
+
+
+/* ====================================================== */
+/* MEDIA QUERIES BREAKPOINTS */
+
+/* ========== GENERAL ========== */
+
+/* LARGE DEVICES */
+@media (max-width: 1000px) {
+    header {
+        padding: 18px 7%;
+    }
+    section {
+        padding: 50px 7%;
+    }
+    .home-text h1 {
+        font-size: 3rem;
+    }
+    .home-text h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* MEDIUM DEVICES */
+@media (max-width: 991px) {
+    header {
+        padding: 18px 4%;
+    }
+    section {
+        padding: 50px 4%;
+    }
+}
+
+/* SMALL DEVICES */
+@media (max-width: 768px) {
+    header {
+        padding: 11px 4%;
+    }
+    #burger-menu{
+        display: initial;
+    }
+    header .navbar {
+        position: absolute;
+        top: -500px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: var(--lightest-color);
+        box-shadow: 0 4px 4px rgb(14 55 54 / 14%);
+        border-top: 2px solid var(--darkest-color);
+        transition: 0.2s;
+        text-align: left;
+    }
+    .navbar.active {
+        top: 100%;
+    }
+    .navbar a {
+        padding: 1.rem;
+        display: block;
+        color: var(--darkest-color);
+    }
+    .home-text {
+        padding-top: inherit;
+    }
+    .home-text h1 {
+        font-size: 4.2rem;
+    }
+    .home-text h2 {
+        font-size: 1.5rem;
+    }
+    .home-text h4 {
+        font-size: 1.2rem;
+    }
+    .abm-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+  
+/* ========== GALLERY BREAKPOINTS ========== */
+
+/* SMALL DEVICES */
+@media screen and (max-width: 767px) {
+    .gallery {
+        height: auto;
+    }
+}
+
+/* MEDIUM DEVICES */
+@media screen and (min-width: 768px) {
+    .gallery-card__container {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1.5rem;
+    }
+}
+
+/* LARGE DEVICES */
+@media screen and (min-width: 1120px) {
+    .gallery-card__container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
