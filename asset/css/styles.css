@@ -260,7 +260,7 @@ header {
     width: 100%;
 }
 
-.blog .box-container .box .image img {
+.blog .box-container .box:hover .image img {
     transform: scale(1.2);
 }
 
