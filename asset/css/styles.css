@@ -525,7 +525,7 @@ header {
         flex-direction: column;
         background: var(--lightest-color);
         box-shadow: 0 4px 4px rgb(14 55 54 / 14%);
-        border-top: 2px solid var(--darkest-color);
+        border-top: 2px solid var(--main-color);
         transition: 0.2s;
         text-align: left;
     }
