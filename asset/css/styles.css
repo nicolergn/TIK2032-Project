@@ -230,7 +230,7 @@ header {
 
 .blog .heading h2 {
     color: var(--main-color);
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .blog .box-container {
@@ -255,9 +255,9 @@ header {
 }
 
 .blog .box-container .box .image img {
+    width: 100%;
     height: 100%;
     object-fit: cover;
-    width: 100%;
 }
 
 .blog .box-container .box:hover .image img {
@@ -288,10 +288,10 @@ header {
 }
 
 .blog .box-container .box .content p {
-    font-size: var(--p-font-size);
-    line-height: 1.5;
-    color: var(--darkest-color);
     padding: 1rem 0;
+    line-height: 1.5;
+    font-size: var(--p-font-size);
+    color: var(--darkest-color);
 }
 
 /* ========== BLOGS BUTTONS ========== */
@@ -312,6 +312,39 @@ header {
 
 /* ==================== BLOGS SECTION STOP ==================== */
 
+/* ==================== BLOGS ARTICLE DETAIL START ==================== */
+
+.artdetail {
+    background-color: var(--lightest-color);
+    color: var(--darkest-color);
+    padding-left: 10%;
+	padding-top: 13vh;
+}
+
+.artdetail .heading {
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.artd-img {
+    margin-bottom: 20px;
+}
+
+.artd-img img {
+    width: 100%;
+    height: 30vh;
+}
+
+.artd-text p {
+    text-align: justify;
+	text-indent: 3rem;
+	margin-bottom: 1rem;
+}
+
+
+
+/* ==================== BLOGS ARTICLE DETAIL STOP ==================== */
+
 /* ==================== GALLERY SECTION START ==================== */
 
 .gallery {
@@ -323,7 +356,7 @@ header {
 }
 
 .gallery .heading {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 /* ========== PHOTO CARD ========== */
@@ -437,6 +470,7 @@ header {
 .contact {
     display: flex;
     height: auto;
+	padding: 1.5rem;
     flex-direction: column;
     align-items: center;
     background-color: var(--grey-color);
@@ -579,3 +613,9 @@ header {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+
+
+
+
+
